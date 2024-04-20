@@ -1,0 +1,54 @@
+@import 'base/reset.scss';
+@import 'base/mixin.scss';
+header{
+    @include flex;
+    height: 500px;
+    background-image: url('/buoi3/images/th.jpg');
+    background-size: cover;
+    .h1{
+        @include font1;
+    }
+}
+#profile{
+    @include flex;
+    flex-direction: column;
+    .image1{
+    height: 100px;
+    };
+    .h2{
+    @include font2;
+    }
+}
+.container{
+    padding-left: 20%;
+    padding-right: 20%;
+    @include flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    .number{
+        @include font3;
+        color: rgba(0, 0, 0, 0.25);
+    }
+}
+article img{
+    width: 100%;
+    margin-bottom: 120px
+}
+article h3{
+    @include font3;
+}
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #42b4d6;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
